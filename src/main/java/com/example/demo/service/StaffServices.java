@@ -20,6 +20,7 @@ public class StaffServices {
         Staff staff = createStaff();
         String stringJson = mapper.writeValueAsString(staff);
         System.out.println("Object to JSON" + stringJson);
+        System.out.println("check git hub");
 
         ObjectMapper mapper1 = new ObjectMapper();
         String jsonInString = "{\"name\":\"mkyong\",\"age\":38,\"position\":[\"Founder\",\"CTO\",\"Writer\"],\"skills\":[\"java\",\"python\",\"node\",\"kotlin\"],\"salary\":{\"2018\":14000,\"2012\":12000,\"2010\":10000}}";
