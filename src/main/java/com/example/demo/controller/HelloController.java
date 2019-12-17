@@ -26,7 +26,6 @@ public class HelloController {
 
         @RequestMapping("/{age}/{name}")
         public List<Staff> getStaffs(@PathVariable("age") int age, @PathVariable("name")String name ){
-
             List<Staff> staffs = staffServices.createStaffListTwo(age,name);
             return staffs;
         }
